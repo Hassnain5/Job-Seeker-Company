@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".viewapplicants.ShortlistedFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="#f8f8f8">
+
+        <TextView
+            android:id="@+id/applicant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_applicant"
+            android:textSize="16sp"
+            android:textColor="#ACAEBE"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/manrope"
+            android:lineHeight="24dp"
+            android:textFontWeight="500"
+            tools:targetApi="p" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_profile_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile_img"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/david_richardson"
+                android:textSize="16sp"
+                android:textColor="#222741"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="600"
+                tools:targetApi="p" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/manrope"
+                android:textSize="14sp"
+                android:text="@string/davidrichard_gmail_com"
+                android:layout_below="@id/name"
+                android:textColor="#75788D"
+                android:textFontWeight="600"
+                tools:targetApi="p" />
+
+            <TextView
+                android:id="@+id/job_applied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope"
+                android:textSize="11sp"
+                android:text="@string/applied_a_month_ago"
+                android:layout_below="@id/email"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="#75788D"
+                android:textFontWeight="400"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

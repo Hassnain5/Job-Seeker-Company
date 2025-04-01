@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue900">#06165E</color>
+    <color name="blue800">#0B2171</color>
+    <color name="blue700">#11308D</color>
+    <color name="blue600">#1941A8</color>
+    <color name="blue500">#2355C4</color>
+    <color name="blue400">#5482DB</color>
+    <color name="blue300">#78A4ED</color>
+    <color name="blue200">#A7C8F9</color>
+    <color name="blue100">#D2E4FC</color>
+
+    <color name="liblue900">#113A74</color>
+    <color name="liblue800">#1C528C</color>
+    <color name="liblue700">#2C73AE</color>
+    <color name="liblue600">#4198D0</color>
+    <color name="liblue500">#59C1F2</color>
+    <color name="liblue400">#81D9F7</color>
+    <color name="liblue300">#9BE9FB</color>
+    <color name="liblue200">#BDF5FD</color>
+    <color name="liblue100">#DEFCFE</color>
+
+    <color name="yellow900">#773F00</color>
+    <color name="yellow800">#905100</color>
+    <color name="yellow700">#B36B00</color>
+    <color name="yellow600">#D68700</color>
+    <color name="yellow500">#F9A600</color>
+    <color name="yellow400">#FBC23E</color>
+    <color name="yellow300">#FDD465</color>
+    <color name="yellow200">#FEE698</color>
+    <color name="yellow100">#FEF4CB</color>
+
+    <color name="red900">#650412</color>
+    <color name="red800">#7A060E</color>
+    <color name="red700">#970B0A</color>
+    <color name="red600">#B51D0F</color>
+    <color name="red500">#D33415</color>
+    <color name="red400">#E46F4A</color>
+    <color name="red300">#F1986F</color>
+    <color name="red200">#FAC3A0</color>
+    <color name="red100">#FCE4CF</color>
+
+    <color name="LightGray">#F8F8F8</color>
+    <color name="GrayBG">#EFEFEF</color>
+    <color name="DarkGray">#DCDDDF</color>
+    <color name="LightText2">#ACAEBE</color>
+    <color name="LightText">#75788D</color>
+    <color name="Text">#222741</color>
+</resources>

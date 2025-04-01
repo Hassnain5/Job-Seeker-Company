@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".company.CompanySignupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/joby"
+            android:textColor="#2355C4"
+            android:fontFamily="@font/manrope"
+            android:textFontWeight="800"
+            android:layout_marginStart="15dp"
+            android:textSize="24sp"
+            android:layout_marginTop="30dp"
+            tools:targetApi="p" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:textColor="#222741"
+            android:fontFamily="@font/manrope"
+            android:lineHeight="40dp"
+            android:textFontWeight="800"
+            android:layout_marginStart="15dp"
+            android:textSize="28sp"
+            android:layout_marginTop="20dp"
+            tools:targetApi="p" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_fill_in_the_form_below_to_create_an_account_easy_isn_t_it"
+            android:textColor="#75788D"
+            android:fontFamily="@font/manrope"
+            android:lineHeight="24dp"
+            android:textFontWeight="400"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            tools:targetApi="p" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_full_name"
+            android:fontFamily="@font/manrope"
+            android:textColorHint="#75788D"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_email_address"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/manrope"
+            android:textColorHint="#75788D"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:fontFamily="@font/manrope"
+            android:textColorHint="#75788D"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="8"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/manrope"
+            android:textColorHint="#75788D"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="8"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/i_already_have_an_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i_already_have_an_account"
+            android:textColor="#2355C4"
+            android:fontFamily="@font/manrope"
+            android:lineHeight="24dp"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            android:layout_marginTop="200dp"
+            android:textAlignment="center"
+            tools:targetApi="p" />
+
+        <Button
+            android:id="@+id/create_account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:fontFamily="@font/manrope"
+            android:textSize="16sp"
+            android:textFontWeight="600"
+            android:backgroundTint="#2355C4"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            tools:targetApi="p"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

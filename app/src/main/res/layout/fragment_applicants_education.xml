@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="15dp"
+    tools:context=".viewapplicants.ApplicantsEducationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/application_profile_bg"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+        <TextView
+            android:id="@+id/tvSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/california_university"
+            android:textSize="16sp"
+            android:textColor="#222741"
+            android:fontFamily="@font/manrope"
+            android:textFontWeight="600"
+            android:letterSpacing="0.1"
+            tools:targetApi="p" />
+
+        <TextView
+            android:id="@+id/tvDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Becholar of"
+            android:textSize="14sp"
+            android:textColor="#75788D"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/manrope"
+            android:textFontWeight="600"
+            android:letterSpacing="0.1"
+            android:maxLength="15"
+            tools:targetApi="p" />
+        <TextView
+            android:id="@+id/tvField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Art and Design"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/tvDegree"
+            android:textColor="#75788D"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/manrope"
+            android:textFontWeight="600"
+            android:letterSpacing="0.1"
+            tools:targetApi="p" />
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016 "
+            android:textSize="14sp"
+            android:textColor="#75788D"
+            android:layout_below="@id/tvDegree"
+            android:fontFamily="@font/manrope"
+            android:textFontWeight="600"
+            android:letterSpacing="0.1"
+            tools:targetApi="p" />
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020"
+            android:textSize="14sp"
+            android:textColor="#75788D"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/tvStartDate"
+            android:layout_below="@id/tvDegree"
+            android:fontFamily="@font/manrope"
+            android:textFontWeight="600"
+            android:letterSpacing="0.1"
+            tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/short_list_this_applicant"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/short_list_this_applicant"/>
+
+            <RelativeLayout
+                android:id="@+id/reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_strock_bg"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="15dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reject"
+                    android:textSize="16sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#D33415"
+                    android:fontFamily="@font/manrope"
+                    android:textFontWeight="700"
+                    tools:targetApi="p" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

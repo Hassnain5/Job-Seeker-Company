@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CompanyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".API.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".API.JobApplicantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".API.ApplicantDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".API.JobDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".API.JobMatchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".API.AiSuggestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewapplicants.JobDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewapplicants.ApplicantsViewProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewapplicants.ApplicantsCallForInterviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.CompanyNavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_company_navigation" />
+        <activity
+            android:name=".company.CompanyChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.CompanyOpenEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.CompanyForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.CompanySignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.CompanySignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.CompanyCompleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.PostNewJobNextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.AboutCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".company.CompanyPersonalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

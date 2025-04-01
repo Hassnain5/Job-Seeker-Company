@@ -1,0 +1,97 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/application_profile_bg"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvJobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/california_university"
+        android:textSize="16sp"
+        android:textColor="#222741"
+        android:fontFamily="@font/manrope"
+        android:textFontWeight="600"
+        android:letterSpacing="0.1"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/tvEmploymentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Becholar of"
+        android:textSize="14sp"
+        android:textColor="#75788D"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/manrope"
+        android:textFontWeight="600"
+        android:letterSpacing="0.1"
+        tools:targetApi="p" />
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Art and Design"
+        android:layout_marginStart="6dp"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/tvEmploymentType"
+        android:textColor="#75788D"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/manrope"
+        android:textFontWeight="600"
+        android:letterSpacing="0.1"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016 "
+        android:textSize="14sp"
+        android:textColor="#75788D"
+        android:layout_below="@id/tvEmploymentType"
+        android:fontFamily="@font/manrope"
+        android:textFontWeight="600"
+        android:letterSpacing="0.1"
+        tools:targetApi="p" />
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020"
+        android:textSize="14sp"
+        android:textColor="#75788D"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/tvStartDate"
+        android:layout_below="@id/tvEmploymentType"
+        android:fontFamily="@font/manrope"
+        android:textFontWeight="600"
+        android:letterSpacing="0.1"
+        tools:targetApi="p" />
+
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/edit"
+        android:contentDescription="@string/application_profile"
+        />
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/edit"
+        android:visibility="gone"
+        android:contentDescription="@string/application_profile"
+        />
+
+</RelativeLayout>

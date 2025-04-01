@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".company.AboutCompanyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/icon_down"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/arrow_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_company"
+                android:textSize="18sp"
+                android:textColor="#222741"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="700"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            android:src="@drawable/content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/change_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="@string/upload_or_change_picture_of_company_environment"
+                android:background="@drawable/btn_blue_border_bg"
+                android:textColor="@color/blue500"
+                android:paddingHorizontal="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_upload"
+                android:textSize="14sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_profile_bg"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textStyle="bold"
+                android:textColor="#222741"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/profile_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#222741"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="500"
+                android:letterSpacing="0.1"
+                android:background="@drawable/custom_hide_line"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:fontFamily="@font/manrope"
+            android:textSize="16sp"
+            android:textFontWeight="600"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            tools:targetApi="p"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

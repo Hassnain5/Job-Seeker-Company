@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2355C4"
+    tools:context=".company.CompanyOpenEmailActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/open_email"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_your_email"
+        android:textColor="@color/white"
+        android:fontFamily="@font/manrope"
+        android:lineHeight="40dp"
+        android:textFontWeight="800"
+        android:textSize="28sp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        tools:targetApi="p" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_morbi_dolor_nisi"
+        android:textColor="#D2E4FC"
+        android:fontFamily="@font/manrope"
+        android:lineHeight="24dp"
+        android:textFontWeight="400"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        tools:targetApi="p" />
+
+    <Button
+        android:id="@+id/open_email_app"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/open_email_app"
+        android:textColor="@color/white"
+        android:fontFamily="@font/manrope"
+        android:textSize="16sp"
+        android:textFontWeight="600"
+        android:backgroundTint="#59C1F2"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:targetApi="p"
+        />
+
+</LinearLayout>

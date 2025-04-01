@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/navigation_your_listing">
+    <fragment
+        android:id="@+id/navigation_your_listing"
+        android:name="com.example.finalyearproject.company.companyfragments.YourListingFragment"
+        android:label="fragment_your_listing"
+        tools:layout="@layout/fragment_your_listing" />
+    <fragment
+        android:id="@+id/navigation_post"
+        android:name="com.example.finalyearproject.company.companyfragments.PostNewJobFragment"
+        android:label="fragment_post_new_job"
+        tools:layout="@layout/fragment_post_new_job" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.finalyearproject.company.companyfragments.CompanyProfileFragment"
+        android:label="fragment_company_profile"
+        tools:layout="@layout/fragment_company_profile" />
+</navigation>

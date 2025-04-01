@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center"
+    android:orientation="vertical">
+
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:gravity="center">
+
+<com.airbnb.lottie.LottieAnimationView
+android:id="@+id/prog_bar"
+android:layout_width="250dp"
+android:layout_height="250dp"
+android:layout_gravity="center"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/loading_bar" />
+<LinearLayout
+    android:id="@+id/anim_no_match_found"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+
+    android:orientation="vertical">
+<com.airbnb.lottie.LottieAnimationView
+android:layout_width="250dp"
+android:layout_height="250dp"
+android:layout_gravity="center"
+app:lottie_autoPlay="true"
+app:lottie_loop="true"
+app:lottie_rawRes="@raw/no_match_found" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Currently there is no Applicant Suitable for this Job !"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+    </FrameLayout>
+
+    <!-- Rest of your content remains the same -->
+<TextView
+android:id="@+id/gemini_result_text_view"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="text"
+android:textSize="14sp"
+android:visibility="gone" />
+
+<LinearLayout
+android:id="@+id/matched_user_card"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="15dp"
+android:layout_marginEnd="15dp"
+android:layout_marginTop="15dp"
+android:background="@drawable/edit_profile_bg"
+android:orientation="horizontal"
+android:padding="15dp"
+android:visibility="gone">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_img" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/manrope"
+        android:text="@string/david_richardson"
+        android:textColor="#222741"
+        android:textFontWeight="600"
+        android:textSize="16sp"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/manrope"
+        android:text="@string/davidrichard_gmail_com"
+        android:textColor="#75788D"
+        android:textFontWeight="600"
+        android:textSize="14sp"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/date_applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_email"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/manrope"
+        android:text="@string/applied_a_month_ago"
+        android:textColor="#75788D"
+        android:textFontWeight="400"
+        android:textSize="11sp"
+        tools:targetApi="p" />
+</RelativeLayout>
+</LinearLayout>
+    </LinearLayout>
+    </ScrollView>

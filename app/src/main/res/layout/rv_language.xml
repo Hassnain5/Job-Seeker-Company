@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/country_img"
+            />
+
+        <TextView
+            android:id="@+id/language_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:textSize="16sp"
+            android:textColor="#222741"
+            android:layout_marginStart="35dp"
+            android:fontFamily="@font/manrope"
+            android:textFontWeight="600"
+            tools:targetApi="p" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_btn"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#2355C4"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

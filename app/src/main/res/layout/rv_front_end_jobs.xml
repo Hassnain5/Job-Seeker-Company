@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/suggested_jobs_directory"/>
+
+        <ImageView
+            android:id="@+id/kickstarter"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="18dp"
+            android:elevation="5dp"
+            android:src="@drawable/kickstarter" />
+
+        <ImageView
+            android:id="@+id/star_outline"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/star_outline"
+            app:tint="#DCDDDF" />
+
+        <TextView
+            android:id="@+id/jr_front_end_designer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jr_front_end_designer"
+            android:textColor="#222741"
+            android:fontFamily="@font/manrope"
+            android:lineHeight="24dp"
+            android:textFontWeight="600"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            tools:targetApi="p" />
+
+        <TextView
+            android:id="@+id/kickstarter_in_manchester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kickstarter_in_manchester"
+            android:textColor="#ACAEBE"
+            android:fontFamily="@font/manrope"
+            android:lineHeight="24dp"
+            android:textFontWeight="600"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="27dp"
+            android:textSize="12sp"
+            tools:targetApi="p" />
+
+        <Button
+            android:id="@+id/full_time_btn"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:text="@string/full_time"
+            android:textColor="#5482DB"
+            android:fontFamily="@font/manrope"
+            android:textSize="11sp"
+            android:textFontWeight="600"
+            android:backgroundTint="#D2E4FC"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="90dp"
+            tools:targetApi="p"
+            />
+
+        <Button
+            android:id="@+id/remote_btn"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:text="@string/remote"
+            android:textColor="#5482DB"
+            android:fontFamily="@font/manrope"
+            android:textSize="11sp"
+            android:textFontWeight="600"
+            android:backgroundTint="#DEFCFE"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="190dp"
+            tools:targetApi="p"
+            />
+
+        <TextView
+            android:id="@+id/posted_6_hours_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/posted_6_hours_ago"
+            android:textColor="#ACAEBE"
+            android:fontFamily="@font/manrope"
+            android:lineHeight="24dp"
+            android:textFontWeight="600"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="11sp"
+            tools:targetApi="p" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

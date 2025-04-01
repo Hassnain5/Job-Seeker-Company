@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".company.PostNewJobNextActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/post_job"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:text="@string/post_new_job"
+            android:textColor="#222741"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:fontFamily="@font/manrope"
+            />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope"
+            />
+
+        <RelativeLayout
+            android:id="@+id/enter_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edit_profile_bg"
+            >
+
+            <EditText
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_company_name"
+                android:textSize="14sp"
+                android:textColorHint="#75788D"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="500"
+                android:letterSpacing="0.1"
+                android:background="@drawable/custom_hide_line"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/job_type"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope"
+            />
+
+        <RelativeLayout
+            android:id="@+id/enter_job_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edit_profile_bg"
+            >
+
+            <EditText
+                android:id="@+id/job_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_job_type"
+                android:textSize="14sp"
+                android:textColorHint="#75788D"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="500"
+                android:letterSpacing="0.1"
+                android:background="@drawable/custom_hide_line"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/on_site_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/on_site_remote"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope"
+            />
+
+        <RelativeLayout
+            android:id="@+id/enter_job_location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edit_profile_bg"
+            >
+
+            <EditText
+                android:id="@+id/job_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_job_location"
+                android:textSize="14sp"
+                android:textColorHint="#75788D"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="500"
+                android:letterSpacing="0.1"
+                android:background="@drawable/custom_hide_line"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salary"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope"
+            />
+
+        <RelativeLayout
+            android:id="@+id/enter_salary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edit_profile_bg"
+            >
+
+            <EditText
+                android:id="@+id/job_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_salary"
+                android:textSize="14sp"
+                android:textColorHint="#75788D"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="500"
+                android:letterSpacing="0.1"
+                android:background="@drawable/custom_hide_line"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/experience_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/experience_level"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope"
+            />
+
+        <RelativeLayout
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edit_profile_bg"
+            >
+
+            <Spinner
+                android:id="@+id/locationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/manrope"
+            />
+        <RelativeLayout
+            android:id="@+id/enter_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edit_profile_bg"
+            >
+
+            <EditText
+                android:id="@+id/job_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_job_address"
+                android:textSize="14sp"
+                android:textColorHint="#75788D"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/manrope"
+                android:textFontWeight="500"
+                android:letterSpacing="0.1"
+                android:background="@drawable/custom_hide_line"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/post_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/post"
+            android:textColor="@color/white"
+            android:fontFamily="@font/manrope"
+            android:textSize="16sp"
+            android:textFontWeight="600"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            tools:targetApi="p"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

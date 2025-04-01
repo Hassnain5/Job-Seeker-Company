@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".company.companyfragments.YourListingFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_back"
+                android:textColor="#75788D"
+                android:fontFamily="@font/manrope"
+                android:lineHeight="24dp"
+                android:textFontWeight="500"
+                android:layout_marginStart="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                tools:targetApi="p" />
+
+            <TextView
+                android:id="@+id/welcome_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/david_richardson"
+                android:textColor="#222741"
+                android:fontFamily="@font/manrope"
+                android:lineHeight="24dp"
+                android:textFontWeight="700"
+                android:layout_marginStart="15dp"
+                android:textSize="18sp"
+                android:layout_marginTop="45dp"
+                tools:targetApi="p" />
+
+            <ImageView
+                android:id="@+id/bell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bell"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="32dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/your_listing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_listing"
+                android:textSize="16sp"
+                android:lineHeight="24dp"
+                android:textFontWeight="700"
+                android:layout_marginStart="15dp"
+                android:textColor="#222741"
+                android:fontFamily="@font/manrope"
+                tools:targetApi="p" />
+
+            <TextView
+                android:id="@+id/see_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_all"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:lineHeight="24dp"
+                android:textFontWeight="700"
+                android:textColor="#2355C4"
+                android:fontFamily="@font/manrope"
+                tools:targetApi="p" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_job_listing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+</LinearLayout>
