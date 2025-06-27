@@ -84,98 +84,98 @@
             android:textFontWeight="600"
             tools:targetApi="p" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/profile_section_circle_bg"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:paddingVertical="20dp"
-            >
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/profile_section_circle_bg"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:paddingVertical="20dp"-->
+<!--            >-->
 
-            <TextView
-                android:id="@+id/num_12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/number_12"
-                android:textSize="22sp"
-                android:textColor="#222741"
-                android:layout_marginStart="55dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/manrope"
-                android:textFontWeight="600"
-                tools:targetApi="p" />
+<!--            <TextView-->
+<!--                android:id="@+id/num_12"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Jobs Posted"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textColor="#222741"-->
+<!--                android:layout_marginStart="55dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/manrope"-->
+<!--                android:textFontWeight="600"-->
+<!--                tools:targetApi="p" />-->
 
-            <TextView
-                android:id="@+id/Shortlisted"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/shortlisted"
-                android:textSize="14sp"
-                android:textColor="#ACAEBE"
-                android:layout_marginStart="33dp"
-                android:layout_marginTop="32dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/manrope"
-                android:textFontWeight="500"
-                tools:targetApi="p" />
+<!--            <TextView-->
+<!--                android:id="@+id/Shortlisted"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/shortlisted"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="#ACAEBE"-->
+<!--                android:layout_marginStart="33dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/manrope"-->
+<!--                android:textFontWeight="500"-->
+<!--                tools:targetApi="p" />-->
 
-            <TextView
-                android:id="@+id/num_6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/number_6"
-                android:textSize="22sp"
-                android:textColor="#222741"
-                android:layout_marginStart="175dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/manrope"
-                android:textFontWeight="600"
-                tools:targetApi="p" />
+<!--            <TextView-->
+<!--                android:id="@+id/num_6"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/number_6"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textColor="#222741"-->
+<!--                android:layout_marginStart="175dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/manrope"-->
+<!--                android:textFontWeight="600"-->
+<!--                tools:targetApi="p" />-->
 
-            <TextView
-                android:id="@+id/Interview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/interview"
-                android:textSize="14sp"
-                android:textColor="#ACAEBE"
-                android:layout_marginStart="155dp"
-                android:layout_marginTop="32dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/manrope"
-                android:textFontWeight="500"
-                tools:targetApi="p" />
+<!--            <TextView-->
+<!--                android:id="@+id/Interview"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/interview"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="#ACAEBE"-->
+<!--                android:layout_marginStart="155dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/manrope"-->
+<!--                android:textFontWeight="500"-->
+<!--                tools:targetApi="p" />-->
 
-            <TextView
-                android:id="@+id/num_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="270dp"
-                android:fontFamily="@font/manrope"
-                android:text="@string/number_4"
-                android:textColor="#222741"
-                android:textFontWeight="600"
-                android:textSize="22sp"
-                tools:targetApi="p" />
+<!--            <TextView-->
+<!--                android:id="@+id/num_4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="270dp"-->
+<!--                android:fontFamily="@font/manrope"-->
+<!--                android:text="@string/number_4"-->
+<!--                android:textColor="#222741"-->
+<!--                android:textFontWeight="600"-->
+<!--                android:textSize="22sp"-->
+<!--                tools:targetApi="p" />-->
 
-            <TextView
-                android:id="@+id/Offer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/offer"
-                android:textSize="14sp"
-                android:textColor="#ACAEBE"
-                android:layout_marginStart="260dp"
-                android:layout_marginTop="32dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/manrope"
-                android:textFontWeight="500"
-                tools:targetApi="p" />
+<!--            <TextView-->
+<!--                android:id="@+id/Offer"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/offer"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="#ACAEBE"-->
+<!--                android:layout_marginStart="260dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/manrope"-->
+<!--                android:textFontWeight="500"-->
+<!--                tools:targetApi="p" />-->
 
-        </RelativeLayout>
+<!--        </RelativeLayout>-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -237,169 +237,169 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                >
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                >-->
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/application_profile"
-                    android:background="@drawable/application_passed_background"
-                    android:padding="7dp"
-                    android:layout_marginStart="15dp"
-                    android:contentDescription="@string/privacy_policy"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/application_profile"-->
+<!--                    android:background="@drawable/application_passed_background"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:contentDescription="@string/privacy_policy"-->
+<!--                    />-->
 
-                <TextView
-                    android:id="@+id/application_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/application_profile"
-                    android:textSize="16sp"
-                    android:textColor="#222741"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="70dp"
-                    android:fontFamily="@font/manrope"
-                    android:textFontWeight="600"
-                    tools:targetApi="p" />
+<!--                <TextView-->
+<!--                    android:id="@+id/application_profile"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/application_profile"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#222741"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="70dp"-->
+<!--                    android:fontFamily="@font/manrope"-->
+<!--                    android:textFontWeight="600"-->
+<!--                    tools:targetApi="p" />-->
 
-                <ImageView
-                    android:id="@+id/application_left"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/chevron_left"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="15dp"
-                    android:contentDescription="@string/privacy_policy"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/application_left"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/chevron_left"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:contentDescription="@string/privacy_policy"/>-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                >
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                >-->
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/profile_language"
-                    android:background="@drawable/application_passed_background"
-                    android:padding="7dp"
-                    android:layout_marginStart="15dp"
-                    android:contentDescription="@string/privacy_policy"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/profile_language"-->
+<!--                    android:background="@drawable/application_passed_background"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:contentDescription="@string/privacy_policy"-->
+<!--                    />-->
 
-                <TextView
-                    android:id="@+id/Language"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/language"
-                    android:textSize="16sp"
-                    android:textColor="#222741"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="70dp"
-                    android:fontFamily="@font/manrope"
-                    android:textFontWeight="600"
-                    tools:targetApi="p" />
+<!--                <TextView-->
+<!--                    android:id="@+id/Language"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/language"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#222741"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="70dp"-->
+<!--                    android:fontFamily="@font/manrope"-->
+<!--                    android:textFontWeight="600"-->
+<!--                    tools:targetApi="p" />-->
 
-                <ImageView
-                    android:id="@+id/language_left"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/chevron_left"
-                    android:contentDescription="@string/privacy_policy"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/language_left"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:src="@drawable/chevron_left"-->
+<!--                    android:contentDescription="@string/privacy_policy"/>-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                >
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                >-->
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/profile_notification"
-                    android:background="@drawable/application_passed_background"
-                    android:padding="7dp"
-                    android:layout_marginStart="15dp"
-                    android:contentDescription="@string/privacy_policy"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/profile_notification"-->
+<!--                    android:background="@drawable/application_passed_background"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:contentDescription="@string/privacy_policy"-->
+<!--                    />-->
 
-                <TextView
-                    android:id="@+id/notification"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/notification"
-                    android:textSize="16sp"
-                    android:textColor="#222741"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="70dp"
-                    android:fontFamily="@font/manrope"
-                    android:textFontWeight="600"
-                    tools:targetApi="p" />
+<!--                <TextView-->
+<!--                    android:id="@+id/notification"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/notification"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#222741"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="70dp"-->
+<!--                    android:fontFamily="@font/manrope"-->
+<!--                    android:textFontWeight="600"-->
+<!--                    tools:targetApi="p" />-->
 
-                <ImageView
-                    android:id="@+id/notification_left"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/chevron_left"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="15dp"
-                    android:contentDescription="@string/privacy_policy"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/notification_left"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/chevron_left"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:contentDescription="@string/privacy_policy"/>-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                >
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                >-->
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/profile_security"
-                    android:background="@drawable/application_passed_background"
-                    android:padding="7dp"
-                    android:layout_marginStart="15dp"
-                    android:contentDescription="@string/privacy_policy"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/profile_security"-->
+<!--                    android:background="@drawable/application_passed_background"-->
+<!--                    android:padding="7dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:contentDescription="@string/privacy_policy"-->
+<!--                    />-->
 
-                <TextView
-                    android:id="@+id/Security_Settings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/security_settings"
-                    android:textSize="16sp"
-                    android:textColor="#222741"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="70dp"
-                    android:fontFamily="@font/manrope"
-                    android:textFontWeight="600"
-                    tools:targetApi="p" />
+<!--                <TextView-->
+<!--                    android:id="@+id/Security_Settings"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/security_settings"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#222741"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="70dp"-->
+<!--                    android:fontFamily="@font/manrope"-->
+<!--                    android:textFontWeight="600"-->
+<!--                    tools:targetApi="p" />-->
 
-                <ImageView
-                    android:id="@+id/security_left"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/chevron_left"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="15dp"
-                    android:contentDescription="@string/privacy_policy"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/security_left"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/chevron_left"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:contentDescription="@string/privacy_policy"/>-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
         </LinearLayout>
 
@@ -545,36 +545,36 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                >
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                >-->
 
-                <TextView
-                    android:id="@+id/review_joby_on_app_store"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/review_joby_on_app_store"
-                    android:textSize="16sp"
-                    android:textColor="#222741"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/manrope"
-                    android:textFontWeight="600"
-                    tools:targetApi="p" />
+<!--                <TextView-->
+<!--                    android:id="@+id/review_joby_on_app_store"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/review_joby_on_app_store"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#222741"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:fontFamily="@font/manrope"-->
+<!--                    android:textFontWeight="600"-->
+<!--                    tools:targetApi="p" />-->
 
-                <ImageView
-                    android:id="@+id/review_joby_on_app_store_left"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/chevron_left"
-                    android:layout_marginTop="5dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="15dp"
-                    android:contentDescription="@string/review_joby_on_app_store"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/review_joby_on_app_store_left"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/chevron_left"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:contentDescription="@string/review_joby_on_app_store"/>-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
         </LinearLayout>
 

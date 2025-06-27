@@ -1,60 +1,88 @@
 package com.example.companyapp.viewapplicants
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.companyapp.R
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.companyapp.adapter.EducationAdapter
+import com.example.companyapp.databinding.FragmentApplicantsEducationBinding
+import com.example.companyapp.models.Education
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [ApplicantsEducationFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ApplicantsEducationFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private var _binding: FragmentApplicantsEducationBinding? = null
+    private val binding get() = _binding!!
+    private lateinit var educationAdapter: EducationAdapter
+    private val database = FirebaseDatabase.getInstance()
+    private val educationRef = database.getReference("Education")
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_applicants_education, container, false)
+    ): View {
+        _binding = FragmentApplicantsEducationBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ApplicantsEducationFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ApplicantsEducationFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Setup RecyclerView
+        educationAdapter = EducationAdapter(emptyList())
+        binding.recView.layoutManager = LinearLayoutManager(requireContext())
+        binding.recView.adapter = educationAdapter
+
+        // Get user email from arguments
+        val userEmail = arguments?.getString("USER_ID") ?: ""
+
+        if (userEmail.isNotEmpty()) {
+           val processedEmail=userEmail.replace("_",".")
+
+            loadUserEducation(processedEmail)
+        } else {
+            Toast.makeText(requireContext(), "User email not provided", Toast.LENGTH_SHORT).show()
+        }
+//
+//        // Setup button click listeners
+//        binding.shortListThisApplicant.setOnClickListener {
+//            Toast.makeText(requireContext(), "Shortlisted", Toast.LENGTH_SHORT).show()
+//        }
+//
+//        binding.reject.setOnClickListener {
+//            Toast.makeText(requireContext(), "Rejected", Toast.LENGTH_SHORT).show()
+//        }
+    }
+
+    private fun loadUserEducation(userEmail: String) {
+        educationRef.orderByChild("user_email").equalTo(userEmail)
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val educations = mutableListOf<Education>()
+                    for (educationSnapshot in snapshot.children) {
+                        val education = educationSnapshot.getValue(Education::class.java)
+                        education?.let { educations.add(it) }
+                    }
+//                    println(educations)
+//                    Toast.makeText(requireContext(), "Education: $educations", Toast.LENGTH_SHORT).show()
+                    educationAdapter.updateList(educations)
                 }
-            }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(requireContext(), "Error: ${error.message}", Toast.LENGTH_SHORT).show()
+                }
+            })
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

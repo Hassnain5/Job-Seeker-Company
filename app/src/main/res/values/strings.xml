@@ -371,4 +371,5 @@
     <string name="nov_20_2022">Nov 20, 2022</string>
     <string name="buggcy">Buggcy</string>
     <string name="enter_company_name">Enter Company Name</string>
+    <string name="slot_unavailable_message">Slot is already booked on %1$s, %2$s. Please try 30 minutes before or after this time.</string>
 </resources>

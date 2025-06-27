@@ -18,6 +18,12 @@
         android:theme="@style/Theme.CompanyApp"
         tools:targetApi="31">
         <activity
+            android:name=".viewapplicants.ScheduleInterviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewapplicants.MyAnswersActivity"
+            android:exported="false" />
+        <activity
             android:name=".API.TestActivity"
             android:exported="false" />
         <activity

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.companyapp.adapter.ApplicationsAdapter
@@ -34,7 +35,7 @@ class ApplicationsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = ApplicationsAdapter()
+        adapter = ApplicationsAdapter(context ?: return)
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = this@ApplicationsFragment.adapter
@@ -53,14 +54,18 @@ class ApplicationsFragment : Fragment() {
                     val applicants = mutableListOf<Applicant>()
                     for (childSnapshot in snapshot.children) {
                         val status = childSnapshot.child("job_status").getValue(String::class.java)
+                        val info = childSnapshot.child("info").getValue(String::class.java) ?: "No Description Found"
                         if (status == "Submitted") {
                             val email = childSnapshot.child("user_email").getValue(String::class.java) ?: ""
-                            val userId = email.substringBefore("@").replace(".", "") // Generate user ID from email
+                            val userId = email.replace(".", "_") // Generate user ID from email
 
+//                            Toast.makeText(requireContext(), "$email", Toast.LENGTH_SHORT).show()
                             // Fetch user details from Users table
-                            fetchUserDetails(userId, email) { user ->
-                                applicants.add(user)
-                                adapter.submitList(applicants.toList())
+                            if (info != null) {
+                                fetchUserDetails(userId, email ,info,jobId ) { user ->
+                                    applicants.add(user)
+                                    adapter.submitList(applicants.toList())
+                                }
                             }
                         }
                     }
@@ -72,23 +77,25 @@ class ApplicationsFragment : Fragment() {
             })
     }
 
-    private fun fetchUserDetails(userId: String, email: String, callback: (Applicant) -> Unit) {
+    private fun fetchUserDetails(userId: String, email: String,info: String, jobId: String, callback: (Applicant) -> Unit) {
         // 1. Fetch user info from Users table
 
         database.child("User").child(userId).addListenerForSingleValueEvent(
             object : ValueEventListener {
                 override fun onDataChange(userSnapshot: DataSnapshot) {
                     val name = userSnapshot.child("profileName").getValue(String::class.java) ?: "No Name"
-                    val profileImagePath = userSnapshot.child("profileImage").getValue(String::class.java)
+//                    val profileImagePath = userSnapshot.child("profileImage").getValue(String::class.java)
 
+//                    Toast.makeText(requireContext(), "$name", Toast.LENGTH_SHORT).show()
                     // 2. Get profile image URL from Storage
-                    if (profileImagePath != null) {
-                        storage.child(profileImagePath).downloadUrl.addOnSuccessListener { uri ->
+                    if (name != null) {
+                        storage.child("User/$userId/profile.jpg").downloadUrl.addOnSuccessListener { uri ->
                             val applicant = Applicant(
+                                jobId = jobId,
                                 userId = userId,
                                 name = name,
                                 email = email,
-                                info = "", // Will be filled from AppliedJobs
+                                info = info, // Will be filled from AppliedJobs
                                 cvUrl = "", // Will be filled from AppliedJobs
                                 portfolioUrl = "", // Will be filled from AppliedJobs
                                 jobName = "", // Will be filled from AppliedJobs
@@ -97,15 +104,15 @@ class ApplicationsFragment : Fragment() {
                             )
                             callback(applicant)
                         }.addOnFailureListener {
-                            createApplicantWithoutProfile(userId, name, email, callback)
+                            createApplicantWithoutProfile(userId, name, email,jobId,info, callback)
                         }
                     } else {
-                        createApplicantWithoutProfile(userId, name, email, callback)
+                        createApplicantWithoutProfile(userId, name, email,jobId,info, callback)
                     }
                 }
 
                 override fun onCancelled(error: DatabaseError) {
-                    createApplicantWithoutProfile(userId, "Unknown", email, callback)
+                    createApplicantWithoutProfile(userId, "Unknown", email, jobId,"Error",callback)
                 }
             }
         )
@@ -115,13 +122,16 @@ class ApplicationsFragment : Fragment() {
         userId: String,
         name: String,
         email: String,
+        jobId: String,
+        info : String,
         callback: (Applicant) -> Unit
     ) {
         val applicant = Applicant(
+            jobId = jobId,
             userId = userId,
             name = name,
             email = email,
-            info = "", // Will be filled from AppliedJobs
+            info = info, // Will be filled from AppliedJobs
             cvUrl = "", // Will be filled from AppliedJobs
             portfolioUrl = "", // Will be filled from AppliedJobs
             jobName = "", // Will be filled from AppliedJobs

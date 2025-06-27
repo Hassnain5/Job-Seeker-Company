@@ -1,6 +1,7 @@
 package com.example.companyapp.API
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -11,6 +12,8 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.companyapp.R
 import com.example.companyapp.databinding.ActivityJobDetailsBinding
+import com.example.companyapp.viewapplicants.ApplicantsViewProfileActivity
+import com.example.companyapp.viewapplicants.JobDetailActivity
 import com.example.models.User
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -65,10 +68,15 @@ class JobDetailsActivity : AppCompatActivity() {
 //        resultTextView = binding.resultTextView
         geminiTextView = binding.geminiResultTextView
         jobId = intent.getStringExtra("JOB_ID") ?: ""
+//        Toast.makeText(this, "Job ID: $jobId", Toast.LENGTH_LONG).show()
+//        jobId = intent.getStringExtra("User_Email") ?: ""
 
         if (jobId.isNotEmpty()) {
             fetchJobDetails()
+//            Toast.makeText(this , "Job ID in if statement: $jobId", Toast.LENGTH_LONG).show()
         } else {
+//            Toast.makeText(this , "Job ID in if statement: $jobId", Toast.LENGTH_LONG).show()
+
                 Toast.makeText(this, "Error: No job ID provided", Toast.LENGTH_SHORT).show()
         }
     }
@@ -343,6 +351,15 @@ class JobDetailsActivity : AppCompatActivity() {
 //        binding.address.text = ""
         binding.dateApplied.text = ""
 
+        binding.matchedUserCard.setOnClickListener(){
+            val intent = Intent(this, ApplicantsViewProfileActivity::class.java)
+            intent.putExtra("JOB_ID", jobId)
+            intent.putExtra("USER_ID" ,email)
+            Toast.makeText(this, "Job ID: $jobId sent sucessfully ", Toast.LENGTH_LONG).show()
+            startActivity(intent)
+        }
+
+
         // Convert email to database key format (if needed)
         val dbKeyEmail = email.replace(".", "_") // Firebase doesn't allow . in keys
 
@@ -371,6 +388,8 @@ class JobDetailsActivity : AppCompatActivity() {
                     try {
                         // Directly access fields since we're not using User model
                         binding.name.text = snapshot.child("profileName").value?.toString() ?: "No name"
+
+
 //                        binding.phone.text = snapshot.child("profilePhone").value?.toString() ?: "No phone"
 //                        binding.address.text = snapshot.child("profileText").value?.toString() ?: "No address"
 
@@ -414,6 +433,7 @@ class JobDetailsActivity : AppCompatActivity() {
                         val currentDate = Calendar.getInstance().time
                         val diffInMillis = currentDate.time - applicationDate.time
                         val days = TimeUnit.MILLISECONDS.toDays(diffInMillis)
+
 
                         // Format the output
                         val dateText = when {

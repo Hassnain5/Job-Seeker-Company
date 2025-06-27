@@ -1,6 +1,7 @@
 package com.example.companyapp.models
 
 data class Applicant(
+    val jobId: String,
     val email: String,
     val userId: String,  // Add this field to store user ID
     val name: String,    // Add name field

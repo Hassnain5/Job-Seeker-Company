@@ -94,7 +94,7 @@ class JobDetailActivity : AppCompatActivity() {
 
 
             // For now, just show a simple toast
-            Toast.makeText(this, "FAB Clicked", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "FAB Clicked", Toast.LENGTH_SHORT).show()
         }
 
         // You can customize the FAB icon programmatically if needed

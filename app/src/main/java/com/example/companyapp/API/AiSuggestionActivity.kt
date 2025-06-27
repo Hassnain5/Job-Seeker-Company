@@ -26,7 +26,8 @@ Toast.makeText(this, "Job ID: $jobId", Toast.LENGTH_LONG).show()
         binding.proceedButton.setOnClickListener(){
             val intent = Intent(this, JobDetailsActivity::class.java)
             intent.putExtra("JOB_ID", jobId)
-            Toast.makeText(this, "Job ID: $jobId sent sucessfully ", Toast.LENGTH_LONG).show()
+            intent.putExtra("User_Email" ,applicantEmail)
+//            Toast.makeText(this, "Job ID: $jobId sent sucessfully ", Toast.LENGTH_LONG).show()
             startActivity(intent)
         }
 

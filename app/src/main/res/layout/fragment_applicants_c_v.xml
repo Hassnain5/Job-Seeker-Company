@@ -8,7 +8,7 @@
 
   <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="match_parent"
       android:orientation="vertical">
 
       <TextView
@@ -35,15 +35,18 @@
           android:elevation="5dp">
 
           <ImageView
+              android:id="@+id/cv_image"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:src="@drawable/portfolio"
+              android:layout_height="250dp"
+              android:src="@drawable/cv_placeholder"
               android:layout_margin="10dp"/>
 
           <Button
               android:id="@+id/view_cv"
               android:layout_width="match_parent"
               android:layout_height="60dp"
+              android:background="@drawable/btn_background"
+
               android:layout_marginTop="5dp"
               android:text="@string/view_cv"/>
 
@@ -54,7 +57,7 @@
           android:id="@+id/portfolio"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/portfolio"
+          android:text="Other"
           android:textSize="14sp"
           android:layout_marginTop="20dp"
           android:layout_marginStart="15dp"
@@ -73,54 +76,88 @@
           android:layout_marginTop="15dp"
           android:elevation="5dp">
 
-          <ImageView
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:src="@drawable/portfolio"
-              android:layout_margin="10dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Click to View Applicants Answers on Questions in detail"
+          android:textStyle="bold"
+          android:textColor="@color/LightText"/>
 
           <Button
-              android:id="@+id/view_portfolio"
-              android:layout_width="match_parent"
-              android:layout_height="60dp"
+              android:id="@+id/view_question_answers"
+              android:layout_width="240dp"
+              android:layout_height="50dp"
               android:layout_marginTop="5dp"
-              android:text="@string/view_portfolio"/>
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/btn_background"
+              android:text="View Question Answers"/>
 
 
       </LinearLayout>
 
-      <Button
-          android:id="@+id/short_list_this_applicant"
-          android:layout_width="match_parent"
-          android:layout_height="60dp"
-          android:layout_marginTop="20dp"
-          android:layout_marginStart="15dp"
-          android:layout_marginEnd="15dp"
-          android:text="@string/short_list_this_applicant"/>
-
-      <RelativeLayout
-          android:id="@+id/reject"
+      <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:background="@drawable/btn_strock_bg"
+          android:orientation="vertical"
+          android:padding="15dp"
+          android:background="@drawable/edit_profile_bg"
           android:layout_marginStart="15dp"
           android:layout_marginEnd="15dp"
-          android:layout_marginTop="10dp"
-          android:paddingVertical="15dp"
-          android:layout_marginBottom="20dp">
+          android:layout_marginBottom="20dp"
+          android:layout_marginTop="15dp"
+          android:elevation="5dp">
 
           <TextView
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="@string/reject"
-              android:textSize="16sp"
-              android:layout_centerInParent="true"
-              android:textColor="#D33415"
-              android:fontFamily="@font/manrope"
-              android:textFontWeight="700"
-              tools:targetApi="p" />
+              android:text="Click to View Applicants Protfolio Website"
+              android:textStyle="bold"
+              android:textColor="@color/LightText"/>
 
-      </RelativeLayout>
+          <Button
+              android:id="@+id/view_portfolio"
+              android:layout_width="240dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="5dp"
+              android:layout_gravity="center_horizontal"
+
+              android:background="@drawable/btn_background"
+              android:text="@string/view_portfolio"/>
+
+
+      </LinearLayout>
+<!--      <Button-->
+<!--          android:id="@+id/short_list_this_applicant"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="60dp"-->
+<!--          android:layout_marginTop="20dp"-->
+<!--          android:layout_marginStart="15dp"-->
+<!--          android:layout_marginEnd="15dp"-->
+<!--          android:text="@string/short_list_this_applicant"/>-->
+
+<!--      <RelativeLayout-->
+<!--          android:id="@+id/reject"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:background="@drawable/btn_strock_bg"-->
+<!--          android:layout_marginStart="15dp"-->
+<!--          android:layout_marginEnd="15dp"-->
+<!--          android:layout_marginTop="10dp"-->
+<!--          android:paddingVertical="15dp"-->
+<!--          android:layout_marginBottom="20dp">-->
+
+<!--          <TextView-->
+<!--              android:layout_width="wrap_content"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:text="@string/reject"-->
+<!--              android:textSize="16sp"-->
+<!--              android:layout_centerInParent="true"-->
+<!--              android:textColor="#D33415"-->
+<!--              android:fontFamily="@font/manrope"-->
+<!--              android:textFontWeight="700"-->
+<!--              tools:targetApi="p" />-->
+
+<!--      </RelativeLayout>-->
 
   </LinearLayout>
 
