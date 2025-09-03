@@ -38,7 +38,7 @@ class JobDetailsActivity : AppCompatActivity() {
     private lateinit var geminiTextView: TextView
 
     // TODO: Replace with your actual Gemini API key
-    private val apiKey = "AIzaSyAGHUu_1obej-CrOZ-UPYUDEMQRSHBU-Ls"
+    private val apiKey = ""
     private val modelName = "gemini-2.0-flash"
     private val executorService = Executors.newSingleThreadExecutor()
     private lateinit var generativeModel: GenerativeModel
